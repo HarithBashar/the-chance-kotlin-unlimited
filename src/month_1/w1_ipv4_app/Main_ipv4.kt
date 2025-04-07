@@ -1,7 +1,8 @@
 package month_1.w1_ipv4_app
 
 fun main() {
-
+    val testIP: String = "12.45.33..5"
+    print("$testIP | ${isIpv4Valid(testIP)}")
 }
 
 fun isIpv4Valid(ip: String): Boolean {
@@ -16,6 +17,5 @@ fun isIpv4Valid(ip: String): Boolean {
             return false
         }
     }
-
     return true
 }
